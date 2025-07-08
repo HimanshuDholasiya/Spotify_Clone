@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="song_play_container flex hbetween vcentre">
+        <div class="back_button flex hcentre vcentre">
+            <img src="svgs/back_page_btn.svg" alt="">
+        </div>
+        <div class="song_big_img flex hcentre vcentre ">
+            <!-- image -->
+            <img src="song_img/agar_tum_saath_ho.jpeg" alt="">
+        </div>
+
+        <div class="footer_playbar flex hequalaround vcentre font_manrope">
+
+
+            <div class="song_img_name flex vcentre hcentre colgap_15">
+                <!-- image -->
+                <img class="small_img" src="song_img/agar_tum_saath_ho.jpeg" alt="">
+                <div class="song_name_artist flex hstart vcentre ">
+                    <!-- Artist and song name -->
+                    <p class="song_name_playbar font_16 bold">Agar Tum Saath Ho</p>
+                    <p class="song_artist_name font_12">Arijit Singh</p>
+                </div>
+            </div>
+
+
+
+            <div class="song_controls_container flex hcentre vcentre ">
+                <div class="song_controls flex hcentre vcentre">
+                    <div class="play_buttons flex hcentre vcentre">
+                        <!-- pause control changed -->
+                        <img class="previous_song" src="svgs/previous.svg" alt="">
+                        <img class="play_song" src="svgs/pause_controls.svg" alt="">
+                        <img class="next_song" src="svgs/next.svg" alt="">
+
+
+                    </div>
+                    <div class="seekbar_container  flex vcentre hcentre">
+                        <span class="current_time font_manrope font_14">0:00</span>
+                        <div class="seekbar flex hcentre">
+                            <div class="seekbar_circle"></div>
+                        </div>
+                        <span class="total_time font_manrope font_14">0:00</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="mute_volume flex hequalaround vcentre">
+                <img class="mute_btn" src="svgs/mute_btn.svg" alt="">
+
+                <div class="volume_inc_dec flex hcentre vcentre">
+
+                    <div class="volume_slider flex vcentre">
+                        <div class="volume_slider_circle"></div>
+                    </div>
+                    <div class="vol_inc_dec_btn flex hbetween">
+                        <img src="svgs/volume_decrease.svg" alt="">
+                        <img src="svgs/volume_increase.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

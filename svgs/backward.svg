@@ -1,0 +1,48 @@
+<svg width="60" height="60" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .arrow {
+      fill: none;
+      stroke: white; /* Arrow color set to white */
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      /* The animation is always active */
+      animation: slide-in-out 1.6s infinite ease-in-out;
+    }
+
+    /* Keyframes for the "in and out" animation (reversed direction) */
+    @keyframes slide-in-out {
+      0% {
+        transform: translateX(10px); /* Start further out to the right and invisible */
+        opacity: 0;
+      }
+      25% {
+        transform: translateX(0px); /* Move towards the center and become visible */
+        opacity: 1;
+      }
+      75% {
+        transform: translateX(0px); /* Stay at the center, fully visible */
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(-10px); /* Move further out to the left and become invisible */
+        opacity: 0;
+      }
+    }
+
+    /* Individual arrow positioning for staggered animation */
+    /* Note: The points for these polylines are also mirrored to face left */
+    .arrow-1 {
+      animation-delay: 0.1s; /* Staggered delay for continuous animation */
+    }
+    .arrow-2 {
+      animation-delay: 0.3s;
+    }
+    .arrow-3 {
+      animation-delay: 0.5s;
+    }
+  </style>
+  <polyline class="arrow arrow-1" points="56,16 36,32 56,48" />
+  <polyline class="arrow arrow-2" points="40,16 20,32 40,48" />
+  <polyline class="arrow arrow-3" points="24,16 4,32 24,48" />
+</svg>

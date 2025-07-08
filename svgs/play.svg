@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Bright green circle background -->
+  <circle cx="24" cy="24" r="24" fill="#1ED760" />
+  <!-- Black play icon -->
+  <path d="M18 15.5c0-.8.9-1.3 1.6-.9l13 7.1a1.1 1.1 0 0 1 0 2l-13 7.1a1.1 1.1 0 0 1-1.6-.9V15.5Z" fill="black"/>
+</svg>

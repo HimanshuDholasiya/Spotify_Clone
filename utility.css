@@ -1,0 +1,103 @@
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+    .redborder {
+        border: 2px solid red;
+    }
+
+    .border {
+        border: 2px solid white;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .hcentre {
+        justify-content: center;
+    }
+    .hend{
+        justify-content: flex-end;
+    }
+
+    .hstart {
+        justify-content: flex-start;
+    }
+
+    .hend {
+        justify-content: flex-end;
+    }
+
+    .hequalaround {
+        justify-content: space-around;
+    }
+
+    .hbetween {
+        justify-content: space-between;
+    }
+
+    .vcentre {
+        align-items: center;
+    }
+
+    .font_manrope {
+        font-family: "Manrope", sans-serif;
+
+        word-spacing: 1px;
+    }
+
+    .colgap_15 {
+        column-gap: 15px;
+    }
+
+    .colgap_5 {
+        column-gap: 5px;
+    }
+
+    .bold {
+        font-weight: 900;
+    }
+
+    .font_10 {
+        font-size: 10px;
+    }
+
+    .font_12 {
+        font-size: 12px;
+    }
+
+    .font_14 {
+        font-size: 14px;
+    }
+
+    .font_16 {
+        font-size: 16px;
+    }
+
+
+    @keyframes up_play_animation {
+        from {
+            bottom: 0px;
+            right: 25px;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 118px;
+            right: 25px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes up_play_animation_artist {
+        from {
+            bottom: 0px;
+            right: 25px;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 98px;
+            right: 25px;
+            opacity: 1;
+        }
+    }

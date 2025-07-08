@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" sizes="32x32" type="image/png"
+        href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+</head>
+
+
+<body>
+
+    <div class="navigation_bar flex vcentre hbetween ">
+        <div class="navigation_left flex vcentre hstart colgap_15">
+            <div class="spotify_logo">
+                <img src="svgs/spotify_logo.svg" alt="spotify_logo">
+            </div>
+            <div class="home_circle flex hcentre vcentre">
+                <img class="home_logo" src="svgs/home.svg" alt="home">
+            </div>
+
+            <div class="search_bar flex vcentre hequalaround">
+                <img class="search_logo hstart" src="svgs/search.svg" alt="">
+                <input type="text" class="font_14 font_manrope" placeholder="What do you want to play?">
+                <div class="straight_bar straight_bar_search flex vcentre">|</div>
+                <img class="browse_img" src="svgs/browse.svg" alt="Browse_img">
+            </div>
+        </div>
+        <div class="navigation_right flex vcentre hequalaround colgap_15">
+            <div class="three_texts flex colgap_15 vcentre">
+                <a class="font_manrope bold" href="https://www.spotify.com/in-en/premium/" target="_blank">Premium</a>
+                <a class="font_manrope bold" href="https://support.spotify.com/in-en/" target="_blank">Support</a>
+                <a class="font_manrope bold" href="https://www.spotify.com/in-en/download/windows/"
+                    target="_blank">Download</a>
+            </div>
+            <div class="straight_bar flex vcentre nav">|</div>
+            <div class="install_signup_login flex hbetween vcentre colgap_15">
+                <div class="install flex vcentre hequalaround colgap_5">
+                    <img src="svgs/install.svg" alt="">
+                    <a class="font_manrope" href="https://open.spotify.com/download" target="blank">Install App</a>
+                </div>
+                <div class=" sign_up_text font_manrope">Sign Up</div>
+                <div class="login font_manrope bold flex vcentre hcentre">Log in</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="left_right flex vcentre hcentre colgap_5 ">
+
+
+
+        <div class="left flex  font_manrope hbetween">
+            <div class="library_and_songs_listened flex hbetween ">
+                <div class="library flex hbetween vcentre  ">
+                    <div class=" library_icon_and_statement flex hstart colgap_5 vcentre">
+                        <img class="library_icon" src="svgs/library_icon.svg" alt="Library_icon">
+                        <p class="font_16 bold font_manrope">Your Library</p>
+                    </div>
+
+                    <p class="plus_circle flex hcentre vcentre">
+                        <img class="plus_sign" src="svgs/plus.svg" alt="">
+                    </p>
+                </div>
+                <div class="songs_listened ">
+                    <p class="initial_song_message font_manrope font_14 flex vcentre hcentre">Songs you listen will get
+                        added here </p>
+                </div>
+            </div>
+
+
+            <div class="site_info font_manrope flex hend ">
+                <div class="site_info_1 flex colgap_15 font_14">
+                    <a href="https://www.spotify.com/in-en/legal/end-user-agreement/" target="_blank">Legal</a>
+                    <a href="https://www.spotify.com/in-en/accessibility" target="_blank">Accessibility</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" target="_blank">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank">Cookies</a>
+                </div>
+                <div class="site_info_2 flex colgap_15 font_14">
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" target="_blank">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy" target="_blank">Safety & Privacy Center</a>
+                </div>
+                <div>
+                    <button class="flex english_btn vcentre hcentre colgap_5 font_12 bold font_manrope">
+                        <img src="svgs/earth.svg" alt="">
+                        <p>English</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right ">
+            <h2 class="font_manrope bold">All Songs </h2>
+            <div class="trending_container">
+                <img class="backward_svg" src="svgs/backward.svg" alt="back">
+                <div class="trending_songs flex hstart colgap_5">
+                </div>
+                <img class="forward_svg" src="svgs/forward.svg" alt="forward">
+            </div>
+
+
+
+
+            <h2 class="font_manrope bold">Popular Artists</h2>
+            <div class="popular_artist_container">
+                <img class="backward_svg" src="svgs/backward.svg" alt="back">
+                <div class="popular_artists flex hstart colgap_5">
+                    <!-- popular artisits card get added here via JS  -->
+                </div>
+                <img class="forward_svg" src="svgs/forward.svg" alt="forward">
+            </div>
+
+
+
+
+
+            <h2 class="font_manrope bold">English Songs</h2>
+            <div class="english_song_container">
+                <img class="backward_svg" src="svgs/backward.svg" alt="back">
+                <div class="english_songs flex hstart colgap_5">
+
+                </div>
+                <img class="forward_svg" src="svgs/forward.svg" alt="forward">
+            </div>
+
+
+            <h2 class="font_manrope bold">Hindi Songs</h2>
+            <div class="hindi_song_container">
+                <img class="backward_svg" src="svgs/backward.svg" alt="back">
+                <div class="hindi_songs flex hstart colgap_5">
+
+                </div>
+                <img class="forward_svg" src="svgs/forward.svg" alt="forward">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
