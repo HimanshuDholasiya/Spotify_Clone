@@ -915,7 +915,7 @@ function seekbar_timeline(audio, container) {
 
     audio.currentTime = newTime;
     seekbar_circle.style.left = (clickPercent * 100) + "%";
-        seekbarColor.style.width = (clickPercent * 100) + "%";
+    seekbarColor.style.width = (clickPercent * 100) + "%";
     current_time.textContent = formatTime(audio.currentTime);
 
 
@@ -939,7 +939,7 @@ function setting_up_playbar(audio, container) {
     //circle moves from left side of the seekbar that is why left
     seekbarCircle.style.left = `${percentageshift}%`;
     seekbarColor.style.width = `${percentageshift}%`;
-  
+
   })
 }
 

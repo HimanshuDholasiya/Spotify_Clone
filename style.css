@@ -581,11 +581,10 @@
     .seekbar_color {
         position: absolute;
         height: 100%;
-        background-color: rgb(29, 185, 84);
+        background-color: rgb(29, 184, 84);
         border-radius: 10px;
-        
         width: 0%;
-        transition: left 5.9s ease;
+        transition: all 0.4s ease;
     }
 
     .seekbar_circle {
@@ -596,7 +595,7 @@
         height: 12px;
         width: 12px;
         border-radius: 50%;
-        transition: left 0.4s ease;
+        transition: all 0.4s ease;
     }
 
 
