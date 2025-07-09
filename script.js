@@ -624,6 +624,22 @@ function create_songs_listened_cards() {
   )
 }
 
+let singer_songs = [];
+function getting_songs_of_singer() {
+  songs2.forEach(song => {
+    if (song.artist === "Arijit Singh") {
+      singer_songs.push(song)
+    }
+  });
+
+}
+console.log("*****");
+
+console.log(singer_songs);
+getting_songs_of_singer();
+
+
+
 function create_artist_image() {
   let container = document.querySelector(".popular_artists");
   singer_data.forEach(
