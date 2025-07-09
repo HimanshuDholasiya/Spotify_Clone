@@ -122,7 +122,8 @@
     .three_texts a:hover,
     .install:hover,
     .sign_up_text:hover,
-    .login:hover {
+    .login:hover,
+    .spotify_logo:hover {
         scale: 1.15;
         cursor: pointer;
     }

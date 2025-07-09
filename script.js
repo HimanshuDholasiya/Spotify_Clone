@@ -968,7 +968,8 @@ function volume_slider_settings(audio, container) {
 //function for giving functionality of back button 
 function back_button_functionality(container) {
   let back_button = container.querySelector(".back_button");
-  let home_button = document.querySelector(".home_circle")
+  let home_button = document.querySelector(".home_circle");
+  let spotify_button = document.querySelector(".spotify_logo");
   if (back_button) {
     back_button.addEventListener("click", () => {
       container.classList.remove("show")
@@ -980,6 +981,15 @@ function back_button_functionality(container) {
   }
   if (home_button) {
     home_button.addEventListener("click", () => {
+      container.classList.remove("show")
+      setTimeout(() => {
+        remove_old_container();
+        pause_old_audio();
+      }, 400)
+    })
+  }
+  if (spotify_button) {
+    spotify_button.addEventListener("click", () => {
       container.classList.remove("show")
       setTimeout(() => {
         remove_old_container();
