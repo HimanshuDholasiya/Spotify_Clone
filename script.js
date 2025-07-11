@@ -511,6 +511,7 @@ const songs2 = [
 
 
 const singer_data = [
+  
   {
     singer_name: "Yo Yo Honey Singh",
     singer_img: "artist_images/yo_yo_honey_singh_artist.jpeg"
