@@ -511,7 +511,7 @@ const songs2 = [
 
 
 const singer_data = [
-  
+
   {
     singer_name: "Yo Yo Honey Singh",
     singer_img: "artist_images/yo_yo_honey_singh_artist.jpeg"
@@ -626,9 +626,10 @@ function create_songs_listened_cards() {
 }
 
 let singer_songs = [];
-function getting_songs_of_singer() {
+function getting_songs_of_singer(singer_name) {
   songs2.forEach(song => {
-    if (song.artist === "Arijit Singh") {
+    const artists = song.artist.split(',').map(name => name.trim());
+    if (artists.includes(singer_name)) {
       singer_songs.push(song)
     }
   });
@@ -637,7 +638,7 @@ function getting_songs_of_singer() {
 console.log("*****");
 
 console.log(singer_songs);
-getting_songs_of_singer();
+getting_songs_of_singer("Arijit Singh");
 
 
 
@@ -740,6 +741,9 @@ function creating_hindi_song_cards() {
 }
 
 creating_hindi_song_cards();
+
+
+
 
 function scroll_horizontally(to_be_scrolled, container) {
 
