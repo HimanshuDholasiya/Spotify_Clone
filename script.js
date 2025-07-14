@@ -17,42 +17,42 @@ const songs2 = [
   },
   {
     title: "Apna Bana Le",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Sachin-Jigar , Amitabh Bhattacharya",
     filePath: "songs/apna_bana_le.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/apna_bana_le.jpeg" alt="apna_bana_le_img">'
   },
   {
     title: "On & On",
-    artist: "Cartoon, Daniel Levi",
+    artist: "Cartoon, Daniel Levi , Jeja",
     filePath: "songs/cartoon_on_and_on.mp3",
     language: "English",
     imgTag: '<img class="song_card_image" src="song_img/cartoon_on_and_on.jpeg" alt="cartoon_on_and_on_img">'
   },
   {
     title: "Dil Diyan Gallan",
-    artist: "Atif Aslam",
+    artist: "Atif Aslam , Vishal-Shekhar , Irshad Kamil ",
     filePath: "songs/dil_diyaan_gallan.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/dil_diyaan_gallan.jpeg" alt="dil_diyaan_gallan_img">'
   },
   {
     title: "Finding Her",
-    artist: "LesFM (No Copyright Music)",
+    artist: "Khushagra , Bharath , Saaheal",
     filePath: "songs/finding_her.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/finding_her.jpeg" alt="finding_her_img">'
   },
   {
     title: "Humdard",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Mithoon",
     filePath: "songs/humdard_ek_villian.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/humdard_ek_villian.jpeg" alt="humdard_ek_villian_img">'
   },
   {
     title: "O Maahi",
-    artist: "Arijit Singh",
+    artist: "Pritam , Arijit Singh , Irshad Kamil ",
     filePath: "songs/o_maahi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/o_maahi.jpeg" alt="o_maahi_img">'
@@ -66,28 +66,28 @@ const songs2 = [
   },
   {
     title: "Sajni (Laapataa Ladies)",
-    artist: "Arijit Singh",
+    artist: "Ram Sampath , Arijit Singh , Prashant Pandey",
     filePath: "songs/sajni_laapata_ladies.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/sajni_laapata_ladies.jpeg" alt="sajni_laapata_ladies_img">'
   },
   {
     title: "Sapphire",
-    artist: "Tobu",
+    artist: "Ed Sheeran",
     filePath: "songs/sapphire.mp3",
     language: "English",
     imgTag: '<img class="song_card_image" src="song_img/sapphire.jpeg" alt="sapphire_img">'
   },
   {
     title: "Satranga (Animal)",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Shreyas Puranik , Siddharth-Garima",
     filePath: "songs/satranga_animal.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/satranga_animal.jpeg" alt="satranga_animal_img">'
   },
   {
     title: "Tujhe Kitna Chahne Lage",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Mithoon",
     filePath: "songs/tughe_kitna_chahne_lage_hum.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tughe_kitna_chahne_lage_hum.jpeg" alt="tughe_kitna_chahne_lage_hum_img">'
@@ -143,21 +143,21 @@ const songs2 = [
   },
   {
     title: "Mere Sohneya",
-    artist: "Sachet Tandon, Parampara Thakur",
+    artist: "Sachet-Parampara",
     filePath: "songs/mere_sohneya_kabir_singh.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/mere_sohneya_kabir_singh.jpeg" alt="mere_sohneya_kabir_singh_img">'
   },
   {
     title: "Malang Sajna",
-    artist: "Sachet Tandon, Parampara Thakur",
+    artist: "Sachet-Parampara",
     filePath: "songs/malang_sajna.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/malang_sajna.jpeg" alt="malang_sajna_img">'
   },
   {
     title: "Zinda",
-    artist: "Siddharth Mahadevan",
+    artist: "Shankar-Ehsaan-Loy , Siddharth Mahadevan",
     filePath: "songs/zinda_bhaag_milkha_bhaag.mp3", // Assuming this is "Zinda" from Bhaag Milkha Bhaag
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/zinda_bhaag_milkha_bhaag.jpeg" alt="zinda_bhaag_milkha_bhaag_img">'
@@ -171,77 +171,77 @@ const songs2 = [
   },
   {
     title: "Chaleya Jawan",
-    artist: "Arijit Singh, Shilpa Rao",
+    artist: "Anirudh Ravichander , Arijit Singh , Shilpa Rao , Kumaar",
     filePath: "songs/chaleya_jawan.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/chaleya_jawan.jpeg" alt="chaleya_jawan_img">'
   },
   {
     title: "Why This Kolaveri Di",
-    artist: "Dhanush",
+    artist: "Anirudh Ravichander , Dhanush",
     filePath: "songs/why_this_kolaveri_di.mp3",
-    language: "Tamil", // This is a Tamil song, originally
+    language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/why_this_kolaveri_di.jpeg" alt="why_this_kolaveri_di_img">'
   },
   {
     title: "Nashe Si Chadh Gayi",
-    artist: "Arijit Singh",
+    artist: "Vishal-Shekhar , Arijit Singh , Caralisa Monteiro , Jaideep Sahni",
     filePath: "songs/nashe_si_chadh_gayi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/nashe_si_chadh_gayi.jpeg" alt="nashe_si_chadh_gayi_img">'
   },
   {
     title: "Ghungroo (War)",
-    artist: "Arijit Singh, Shilpa Rao",
+    artist: "Vishal-Shekhar , Arijit Singh, Shilpa Rao , Kumaar",
     filePath: "songs/ghungroo_war.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/ghungroo_war.jpeg" alt="ghungroo_war_img">'
   },
   {
     title: "Tainu Khabar Nahi",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Sachin-Jigar",
     filePath: "songs/tainu_khabar_nahi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tainu_khabar_nahi.jpeg" alt="tainu_khabar_nahi_img">'
   },
   {
     title: "Tauba Tauba (Bad Newz)",
-    artist: "Payal Dev, Jubin Nautiyal",
+    artist: "Karan Aujla",
     filePath: "songs/tauba_tauba_bad_newz.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tauba_tauba_bad_newz.jpeg" alt="tauba_tauba_bad_newz_img">'
   },
   {
     title: "Tere Vaaste",
-    artist: "Varun Jain, Sachin-Jigar, Shadab Faridi, Altamash Faridi",
+    artist: "Varun Jain, Sachin-Jigar, Shadab Faridi, Altamash Faridi , Amitabh Bhattacharya",
     filePath: "songs/tere_vaaste.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tere_vaaste.jpeg" alt="tere_vaaste_img">'
   },
   {
     title: "Saibo",
-    artist: "Tochi Raina, Shreya Ghoshal",
+    artist: "Sachin-Jigar , Tochi Raina, Shreya Ghoshal",
     filePath: "songs/saibo.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/saibo.jpeg" alt="saibo_img">'
   },
   {
     title: "Main Rang Sharbaton Ka",
-    artist: "Atif Aslam, Chinmayi Sripada",
+    artist: "Atif Aslam, Chinmayi Sripada , Pritam",
     filePath: "songs/main_rang_sharbaton_ka.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/main_rang_sharbaton_ka.jpeg" alt="main_rang_sharbaton_ka_img">'
   },
   {
     title: "Tera Hone Laga Hoon",
-    artist: "Atif Aslam, Alisha Chinai",
+    artist: "Atif Aslam, Alisha Chinai , Pritam",
     filePath: "songs/tera_hone_laga_hoon.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tera_hone_laga_hoon.jpeg" alt="tera_hone_laga_hoon_img">'
   },
   {
     title: "Param Sundari",
-    artist: "Shreya Ghoshal",
+    artist: "Shreya Ghoshal , A.R. Rahman",
     filePath: "songs/param_sundari.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/param_sundari.jpeg" alt="param_sundari_img">'
@@ -269,49 +269,49 @@ const songs2 = [
   },
   {
     title: "Kabira",
-    artist: "Tochi Raina, Rekha Bhardwaj",
+    artist: "Tochi Raina, Rekha Bhardwaj , Pritam",
     filePath: "songs/kabira.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/kabira.jpeg" alt="kabira_img">'
   },
   {
     title: "Tum Se Hi",
-    artist: "Mohit Chauhan",
+    artist: "Mohit Chauhan , Pritam , Irshad Kamil",
     filePath: "songs/tum_se_hi_jab_we_met.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tum_se_hi_jab_we_met.jpeg" alt="tum_se_hi_jab_we_met_img">'
   },
   {
     title: "Jeene Laga Hoon",
-    artist: "Atif Aslam, Shreya Ghoshal",
+    artist: "Atif Aslam, Shreya Ghoshal , Sachin-Jigar",
     filePath: "songs/jeene_laga_hoon.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/jeene_laga_hoon.jpeg" alt="jeene_laga_hoon_img">'
   },
   {
     title: "Ve Kamleya",
-    artist: "Arijit Singh, Shreya Ghoshal",
+    artist: "Arijit Singh, Shreya Ghoshal , Pritam",
     filePath: "songs/ve_kamleya.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/ve_kamleya.jpeg" alt="ve_kamleya_img">'
   },
   {
     title: "Samjhawan",
-    artist: "Arijit Singh, Shreya Ghoshal",
+    artist: "Arijit Singh, Shreya Ghoshal , Jawad Ahmad ",
     filePath: "songs/samjhawan.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/samjhawan.jpeg" alt="samjhawan_img">'
   },
   {
     title: "Tum Kya Mile",
-    artist: "Pritam, Arijit Singh, Shreya Ghoshal",
+    artist: "Pritam, Arijit Singh, Shreya Ghoshal , Amitabh Bhattacharya",
     filePath: "songs/tum_kya_mile.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tum_kya_mile.jpeg" alt="tum_kya_mile_img">'
   },
   {
     title: "Millionaire Song",
-    artist: "Sukhwinder Singh", // Based on common association with Slumdog Millionaire
+    artist: "Yo Yo Honey Singh", 
     filePath: "songs/millionaire_song.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/millionaire_song.jpeg" alt="millionaire_song_img">'
@@ -353,154 +353,154 @@ const songs2 = [
   },
   {
     title: "Mitwa",
-    artist: "Shafqat Amanat Ali, Shankar Mahadevan, Caralisa Monteiro",
+    artist: "Shankar-Ehsaan-Loy , Shafqat Amanat Ali, Shankar Mahadevan, Caralisa Monteiro",
     filePath: "songs/mitwa.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/mitwa.jpeg" alt="mitwa_img">'
   },
   {
     title: "Humraah Malang",
-    artist: "Sachet Tandon",
+    artist: "Sachet Tandon , Kunal Verma",
     filePath: "songs/humraah_malang.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/humraah_malang.jpeg" alt="humraah_malang_img">'
   },
   {
     title: "Phir Bhi Tumko Chahunga",
-    artist: "Arijit Singh, Shashaa Tirupati",
+    artist: "Arijit Singh, Shashaa Tirupati , Mithoon , Manoj Muntashir ",
     filePath: "songs/phir_bhi_tumko_chahunga.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/phir_bhi_tumko_chahunga.jpeg" alt="phir_bhi_tumko_chahunga_img">'
   },
   {
     title: "O Saathi",
-    artist: "Atif Aslam",
+    artist: "Atif Aslam , Arko",
     filePath: "songs/o_saathi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/o_saathi.jpeg" alt="o_saathi_img">'
   },
   {
     title: "Tujh Mein Rab Dikhta Hain",
-    artist: "Roop Kumar Rathod",
+    artist: "Salim-Sulaiman , Roop Kumar Rathod , Jaideep Sahni",
     filePath: "songs/tujh_main_rab_dikhata_hain.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tujh_main_rab_dikhata_hain.jpeg" alt="tujh_main_rab_dikhata_hain_img">'
   },
   {
     title: "Ve Maahi",
-    artist: "Arijit Singh, Neha Kakkar",
+    artist: "Arijit Singh, Neha Kakkar , Asees Kaur",
     filePath: "songs/ve_maahi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/ve_maahi.jpeg" alt="ve_maahi_img">'
   },
   {
     title: "Janam Janam",
-    artist: "Arijit Singh, Antara Mitra",
+    artist: "Pritam , Arijit Singh, Antara Mitra",
     filePath: "songs/janam_janam.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/janam_janam.jpeg" alt="janam_janam_img">'
   },
   {
     title: "Ae Dil Hai Mushkil",
-    artist: "Arijit Singh",
+    artist: "Pritam , Arijit Singh",
     filePath: "songs/ae_dil_hai_mushkil.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/ae_dil_hai_mushkil.jpeg" alt="ae_dil_hai_mushkil_img">'
   },
   {
     title: "Kalank Title Track",
-    artist: "Arijit Singh",
+    artist: "Pritam , Arijit Singh",
     filePath: "songs/kalank_title_track.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/kalank_title_track.jpeg" alt="kalank_title_track_img">'
   },
   {
     title: "Tum Hi Aana (Marjaavaan)",
-    artist: "Jubin Nautiyal",
+    artist: "Payal Dev , Kunaal Verma , Jubin Nautiyal",
     filePath: "songs/tum_hi_aana_marjaavaan.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tum_hi_aana_marjaavaan.jpeg" alt="tum_hi_aana_marjaavaan_img">'
   },
   {
     title: "Raataan Lambiyan (Shershaah)",
-    artist: "Jubin Nautiyal, Asees Kaur",
+    artist: "Jubin Nautiyal, Asees Kaur , Tanishk Bagchi",
     filePath: "songs/raataan_lambiyan_shershaah.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/raataan_lambiyan_shershaah.jpeg" alt="raataan_lambiyan_shershaah_img">'
   },
   {
     title: "Hamari Adhuri Kahani",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Jeet Gannguli , Rashmi Virag",
     filePath: "songs/hamari_adhuri_kahani.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/hamari_adhuri_kahani.jpeg" alt="hamari_adhuri_kahani_img">'
   },
   {
     title: "Shayad (Love Aaj Kal)",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Pritam",
     filePath: "songs/shayad_love_aaj_kal.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/shayad_love_aaj_kal.jpeg" alt="shayad_love_aaj_kal_img">'
   },
   {
     title: "Channa Mereya",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Pritam",
     filePath: "songs/channa_mereya.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/channa_mereya.jpeg" alt="channa_mereya_img">'
   },
   {
     title: "Kesariya (Brahmastra)",
-    artist: "Arijit Singh",
+    artist: "Arijit Singh , Pritam , Amitabh Bhattacharya",
     filePath: "songs/kesariya_brahmastra.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/kesariya_brahmastra.jpeg" alt="kesariya_brahmastra_img">'
   },
   {
     title: "Hanuman Chalisa",
-    artist: "Hari Om Sharan", // Common well-known artist for Hanuman Chalisa
+    artist: "Brijesh Shandilya , Kuldeep Shukla ", 
     filePath: "songs/hanuman_chalisa.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/hanuman_chalisa.jpeg" alt="hanuman_chalisa_img">'
   },
   {
     title: "Aasman Ko Chukar Dekha",
-    artist: "Shaan", // One of the common renditions
+    artist: "Daler Mehndi , Hrishikesh , Neuman , Franco",
     filePath: "songs/aasman_ko_chukar_dekha.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/aasman_ko_chukar_dekha.jpeg" alt="aasman_ko_chukar_dekha_img">'
   },
   {
     title: "Khamma Re Khamma",
-    artist: "Rekha Rao", // Popular artist for this Rajasthani folk song
+    artist: "Hemant Chauhan ",
     filePath: "songs/khamma_re_khamma.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/khamma_re_khamma.jpeg" alt="khamma_re_khamma_img">'
   },
   {
     title: "Tu Laung Main Elaachi (Luka Chuppi)",
-    artist: "Tulsi Kumar",
+    artist: "Tulsi Kumar , Kunaal Verma , Tanishk Bagchi",
     filePath: "songs/tu_laung_main_elaachi_lukka_chuppi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tu_laung_main_elaachi_lukka_chuppi.jpeg" alt="tu_laung_main_elaachi_lukka_chuppi_img">'
   },
   {
     title: "Pal",
-    artist: "Arijit Singh, Shreya Ghoshal",
+    artist: "Arijit Singh, Shreya Ghoshal , Javed-Mohsin",
     filePath: "songs/pal.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/pal.jpeg" alt="pal_img">'
   },
   {
     title: "Paniyon Sa",
-    artist: "Atif Aslam, Tulsi Kumar",
+    artist: "Rochak Kohli , Atif Aslam, Tulsi Kumar",
     filePath: "songs/paniyon_sa.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/paniyon_sa.jpeg" alt="paniyon_sa_img">'
   },
   {
     title: "Jeena Jeena",
-    artist: "Atif Aslam",
+    artist: "Atif Aslam , Sachin-Jigar , Priya Saraiya",
     filePath: "songs/jeena_jeena.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/jeena_jeena.jpeg" alt="jeena_jeena_img">'
@@ -1150,6 +1150,7 @@ function song_fullscreen_play_artist(container) {
   let song_playing_container = document.querySelector(container);
   const btns = song_playing_container.querySelectorAll(".popular_artist_card .playimg");
   console.log(btns);
+
 
   btns.forEach((btn, index) => {
     btn.addEventListener("click", async () => {
