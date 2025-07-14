@@ -7,7 +7,6 @@ let current_index = 0;
 let newVolume = 0.7;
 
 
-
 const songs2 = [
   {
     title: "Agar Tum Saath Ho",
@@ -25,7 +24,7 @@ const songs2 = [
   },
   {
     title: "On & On",
-    artist: "Cartoon feat. Daniel Levi",
+    artist: "Cartoon, Daniel Levi",
     filePath: "songs/cartoon_on_and_on.mp3",
     language: "English",
     imgTag: '<img class="song_card_image" src="song_img/cartoon_on_and_on.jpeg" alt="cartoon_on_and_on_img">'
@@ -67,7 +66,7 @@ const songs2 = [
   },
   {
     title: "Sajni (Laapataa Ladies)",
-    artist: "Ram Sampath, Arijit Singh",
+    artist: "Arijit Singh",
     filePath: "songs/sajni_laapata_ladies.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/sajni_laapata_ladies.jpeg" alt="sajni_laapata_ladies_img">'
@@ -95,7 +94,7 @@ const songs2 = [
   },
   {
     title: "Closer",
-    artist: "The Chainsmokers",
+    artist: "The Chainsmokers, Halsey",
     filePath: "songs/the_chainsmokers_closer.mp3",
     language: "English",
     imgTag: '<img class="song_card_image" src="song_img/the_chainsmokers_closer.jpeg" alt="the_chainsmokers_closer_img">'
@@ -144,28 +143,28 @@ const songs2 = [
   },
   {
     title: "Mere Sohneya",
-    artist: "Sachet-Parampara, Parampara Thakur",
+    artist: "Sachet Tandon, Parampara Thakur",
     filePath: "songs/mere_sohneya_kabir_singh.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/mere_sohneya_kabir_singh.jpeg" alt="mere_sohneya_kabir_singh_img">'
   },
   {
     title: "Malang Sajna",
-    artist: "Sachet-Parampara, Parampara Thakur",
+    artist: "Sachet Tandon, Parampara Thakur",
     filePath: "songs/malang_sajna.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/malang_sajna.jpeg" alt="malang_sajna_img">'
   },
   {
     title: "Zinda",
-    artist: "Anirudh Ravichander",
+    artist: "Siddharth Mahadevan",
     filePath: "songs/zinda_bhaag_milkha_bhaag.mp3", // Assuming this is "Zinda" from Bhaag Milkha Bhaag
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/zinda_bhaag_milkha_bhaag.jpeg" alt="zinda_bhaag_milkha_bhaag_img">'
   },
   {
     title: "Hukum (Jailer)",
-    artist: "Anirudh Ravichander",
+    artist: "Anirudh Ravichander, Super Subu",
     filePath: "songs/hukum_jailer.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/hukum_jailer.jpeg" alt="hukum_jailer_img">'
@@ -200,7 +199,7 @@ const songs2 = [
   },
   {
     title: "Tainu Khabar Nahi",
-    artist: "Various", // Could be from an album, or various artists depending on version
+    artist: "Arijit Singh",
     filePath: "songs/tainu_khabar_nahi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tainu_khabar_nahi.jpeg" alt="tainu_khabar_nahi_img">'
@@ -312,9 +311,9 @@ const songs2 = [
   },
   {
     title: "Millionaire Song",
-    artist: "Unknown", // Please specify artist if known
+    artist: "Sukhwinder Singh", // Based on common association with Slumdog Millionaire
     filePath: "songs/millionaire_song.mp3",
-    language: "Hindi", // Assuming English from filename
+    language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/millionaire_song.jpeg" alt="millionaire_song_img">'
   },
   {
@@ -459,23 +458,23 @@ const songs2 = [
   },
   {
     title: "Hanuman Chalisa",
-    artist: "Various", // Many versions exist, specify if a particular artist is preferred
+    artist: "Hari Om Sharan", // Common well-known artist for Hanuman Chalisa
     filePath: "songs/hanuman_chalisa.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/hanuman_chalisa.jpeg" alt="hanuman_chalisa_img">'
   },
   {
     title: "Aasman Ko Chukar Dekha",
-    artist: "Various", // Often a patriotic song, various artists
+    artist: "Shaan", // One of the common renditions
     filePath: "songs/aasman_ko_chukar_dekha.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/aasman_ko_chukar_dekha.jpeg" alt="aasman_ko_chukar_dekha_img">'
   },
   {
     title: "Khamma Re Khamma",
-    artist: "Unknown", // Please specify artist if known
+    artist: "Rekha Rao", // Popular artist for this Rajasthani folk song
     filePath: "songs/khamma_re_khamma.mp3",
-    language: "Hindi", // Assuming Hindi/Rajasthani
+    language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/khamma_re_khamma.jpeg" alt="khamma_re_khamma_img">'
   },
   {
@@ -508,81 +507,73 @@ const songs2 = [
   }
 ];
 
-
-
 const singer_data = [
-
   {
     singer_name: "Yo Yo Honey Singh",
-    singer_index: "0" ,
+    singer_index: "0",
     singer_img: "artist_images/yo_yo_honey_singh_artist.jpeg"
   },
   {
     singer_name: "Arijit Singh",
-    singer_index: "1" ,
+    singer_index: "1",
     singer_img: "artist_images/arijit_singh.jpeg"
   },
   {
     singer_name: "Shreya Ghoshal",
-    singer_index: "2" ,
+    singer_index: "2",
     singer_img: "artist_images/shreya_ghoshal.jpeg"
   },
   {
     singer_name: "Pritam",
-    singer_index: "3" ,
+    singer_index: "3",
     singer_img: "artist_images/pritam.jpeg"
   },
   {
     singer_name: "A.R. Rahman",
-    singer_index: "4" ,
+    singer_index: "4",
     singer_img: "artist_images/ar_rahman.jpeg"
   },
   {
     singer_name: "Atif Aslam",
-    singer_index: "5" ,
+    singer_index: "5",
     singer_img: "artist_images/atif_aslam.jpeg"
   },
-
   {
     singer_name: "Sachin-Jigar",
-    singer_index: "6" ,
+    singer_index: "6",
     singer_img: "artist_images/sachin_jigar.jpeg"
   },
   {
     singer_name: "Vishal-Shekhar",
-    singer_index: "7" ,
+    singer_index: "7",
     singer_img: "artist_images/vishal_shekhar.jpeg"
   },
-
-
   {
     singer_name: "Anirudh Ravichander",
-    singer_index: "8" ,
+    singer_index: "8",
     singer_img: "artist_images/anirudh_ravichander.jpeg"
   },
   {
     singer_name: "Udit Narayan",
-    singer_index: "9" ,
+    singer_index: "9",
     singer_img: "artist_images/udit_narayan.jpeg"
   },
   {
     singer_name: "Shankar-Ehsaan-Loy",
-    singer_index: "10" ,
+    singer_index: "10",
     singer_img: "artist_images/shankar_ehsaan_loy.jpeg"
   },
-
   {
     singer_name: "Alka Yagnik",
-    singer_index: "11" ,
+    singer_index: "11",
     singer_img: "artist_images/alka_yagnik.jpeg"
   },
   {
     singer_name: "Sachet-Parampara",
-    singer_index: "12" ,
+    singer_index: "12",
     singer_img: "artist_images/sachet_parampara.jpeg"
   }
 ];
-
 
 
 
@@ -626,7 +617,7 @@ function create_songs_listened_cards() {
   songs_listened.forEach(
     song => {
       let imgSrcMatch = song.imgTag.match(/src="([^"]+)"/);
-      
+
       let div = document.createElement("div");
       div.classList.add("song_listened_card", "flex", "hstart", "colgap_15", "vcentre");
 
@@ -639,22 +630,23 @@ function create_songs_listened_cards() {
 }
 
 let singer_songs = [];
-function getting_songs_of_singer(index) {
-  singer_songs=[];
+async function getting_songs_of_singer(index) {
+  singer_songs = [];
   let selected_singer_name;
-  singer_data.forEach(singer=>{
-    if(index==singer.singer_index){
-      selected_singer_name=singer.singer_name;
+  singer_data.forEach(singer => {
+    if (index == singer.singer_index) {
+      selected_singer_name = singer.singer_name;
     }
   })
   songs2.forEach(song => {
     const artists = song.artist.split(',').map(name => name.trim());
-    
+
     if (artists.includes(selected_singer_name)) {
       singer_songs.push(song)
     }
   });
-console.log(singer_songs);
+  console.log(singer_songs);
+  return singer_songs;
 }
 console.log("*****");
 
@@ -832,8 +824,10 @@ function playsong(index, type_of_song) {
     songs_listened.push(song_to_play);
 
   }
-  else if(type_of_song === "Singer_Songs"){
-    song_to_play  = singer_songs[index];
+  else if (type_of_song === "Singer_Songs") {
+    song_to_play = singer_songs[index];
+    console.log(song_to_play);
+
     songs_listened.push(song_to_play)
   }
   else if (type_of_song === "Trending_songs") {
@@ -848,14 +842,14 @@ function playsong(index, type_of_song) {
 
   }
 
-  
+
 
   let listened_container = document.querySelector(".songs_listened");
-  
+
   listened_container.innerHTML = "";
-  
+
   create_songs_listened_cards();
-  
+
 
   //removing old container and pausing the old audio
   remove_old_container();
@@ -1156,12 +1150,18 @@ function song_fullscreen_play_artist(container) {
   let song_playing_container = document.querySelector(container);
   const btns = song_playing_container.querySelectorAll(".popular_artist_card .playimg");
   console.log(btns);
-  
+
   btns.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
       console.log(index);
-      getting_songs_of_singer(index);
-      playsong(index,"Singer_Songs");
+      await getting_songs_of_singer(index); 
+      if(singer_songs.length === 0 ){
+        alert("No songs found for this singer !! Will be added soon ...");
+        return;
+      }
+      playsong(0, "Singer_Songs");
+      
+
       window.scrollTo({
         top: window.innerHeight - 80,
         behavior: 'smooth'
@@ -1175,10 +1175,10 @@ function song_fullscreen_play(container) {
   let song_playing_container = document.querySelector(container)
   const btns = song_playing_container.querySelectorAll(".song_card .playimg img");
 
-  
+
   btns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
-    
+
       if (container === ".english_song_container") {
 
 
