@@ -514,58 +514,71 @@ const singer_data = [
 
   {
     singer_name: "Yo Yo Honey Singh",
+    singer_index: "0" ,
     singer_img: "artist_images/yo_yo_honey_singh_artist.jpeg"
   },
   {
     singer_name: "Arijit Singh",
+    singer_index: "1" ,
     singer_img: "artist_images/arijit_singh.jpeg"
   },
   {
     singer_name: "Shreya Ghoshal",
+    singer_index: "2" ,
     singer_img: "artist_images/shreya_ghoshal.jpeg"
   },
   {
     singer_name: "Pritam",
+    singer_index: "3" ,
     singer_img: "artist_images/pritam.jpeg"
   },
   {
     singer_name: "A.R. Rahman",
+    singer_index: "4" ,
     singer_img: "artist_images/ar_rahman.jpeg"
   },
   {
     singer_name: "Atif Aslam",
+    singer_index: "5" ,
     singer_img: "artist_images/atif_aslam.jpeg"
   },
 
   {
     singer_name: "Sachin-Jigar",
+    singer_index: "6" ,
     singer_img: "artist_images/sachin_jigar.jpeg"
   },
   {
     singer_name: "Vishal-Shekhar",
+    singer_index: "7" ,
     singer_img: "artist_images/vishal_shekhar.jpeg"
   },
 
 
   {
     singer_name: "Anirudh Ravichander",
+    singer_index: "8" ,
     singer_img: "artist_images/anirudh_ravichander.jpeg"
   },
   {
     singer_name: "Udit Narayan",
+    singer_index: "9" ,
     singer_img: "artist_images/udit_narayan.jpeg"
   },
   {
     singer_name: "Shankar-Ehsaan-Loy",
+    singer_index: "10" ,
     singer_img: "artist_images/shankar_ehsaan_loy.jpeg"
   },
 
   {
     singer_name: "Alka Yagnik",
+    singer_index: "11" ,
     singer_img: "artist_images/alka_yagnik.jpeg"
   },
   {
     singer_name: "Sachet-Parampara",
+    singer_index: "12" ,
     singer_img: "artist_images/sachet_parampara.jpeg"
   }
 ];
@@ -626,19 +639,26 @@ function create_songs_listened_cards() {
 }
 
 let singer_songs = [];
-function getting_songs_of_singer(singer_name) {
+function getting_songs_of_singer(index) {
+  singer_songs=[];
+  let selected_singer_name;
+  singer_data.forEach(singer=>{
+    if(index==singer.singer_index){
+      selected_singer_name=singer.singer_name;
+    }
+  })
   songs2.forEach(song => {
     const artists = song.artist.split(',').map(name => name.trim());
-    if (artists.includes(singer_name)) {
+    
+    if (artists.includes(selected_singer_name)) {
       singer_songs.push(song)
     }
   });
-
+console.log(singer_songs);
 }
 console.log("*****");
 
-console.log(singer_songs);
-getting_songs_of_singer("Arijit Singh");
+
 
 
 
@@ -811,6 +831,10 @@ function playsong(index, type_of_song) {
     song_to_play = english_songs[index];
     songs_listened.push(song_to_play);
 
+  }
+  else if(type_of_song === "Singer_Songs"){
+    song_to_play  = singer_songs[index];
+    songs_listened.push(song_to_play)
   }
   else if (type_of_song === "Trending_songs") {
     song_to_play = songs2[index];
@@ -1071,6 +1095,9 @@ function prev_next(prev_btn, next_btn, type_of_song) {
   if (type_of_song === "English") {
     array_to_be_used = english_songs;
   }
+  else if (type_of_song === "Singer_Songs") {
+    array_to_be_used = singer_songs;
+  }
   else if (type_of_song === "Trending_songs") {
     array_to_be_used = songs2;
   }
@@ -1133,7 +1160,12 @@ function song_fullscreen_play_artist(container) {
   btns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       console.log(index);
-
+      getting_songs_of_singer(index);
+      playsong(index,"Singer_Songs");
+      window.scrollTo({
+        top: window.innerHeight - 80,
+        behavior: 'smooth'
+      });
     })
   })
 }
@@ -1176,6 +1208,7 @@ scroll_horizontally(".popular_artists", ".popular_artist_container");
 scroll_horizontally(".english_songs", ".english_song_container");
 scroll_horizontally(".hindi_songs", ".hindi_song_container");
 song_fullscreen_play(".english_song_container");
+song_fullscreen_play(".popular_artist_container");
 song_fullscreen_play(".hindi_song_container");
 song_fullscreen_play(".trending_container");
 
