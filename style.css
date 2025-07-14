@@ -470,7 +470,8 @@
     }
 
     .back_button:hover {
-        scale: 1.2;
+        scale: 1.1;
+        box-shadow: 0px 0px 10px white;
     }
 
     .song_big_img {
