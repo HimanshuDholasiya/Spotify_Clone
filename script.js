@@ -613,7 +613,7 @@ function create_songs_listened_cards() {
   songs_listened.forEach(
     song => {
       let imgSrcMatch = song.imgTag.match(/src="([^"]+)"/);
-      console.log(imgSrcMatch);
+      
       let div = document.createElement("div");
       div.classList.add("song_listened_card", "flex", "hstart", "colgap_15", "vcentre");
 
@@ -804,8 +804,6 @@ function pause_old_audio() {
 
 
 function playsong(index, type_of_song) {
-
-
   //selecting song by given index
   current_index = index;
 
@@ -826,14 +824,14 @@ function playsong(index, type_of_song) {
 
   }
 
-  console.log("working till here a part");
+  
 
   let listened_container = document.querySelector(".songs_listened");
-  console.log("working till here b part");
+  
   listened_container.innerHTML = "";
-  console.log("working till here c part");
+  
   create_songs_listened_cards();
-  console.log("working till here d part");
+  
 
   //removing old container and pausing the old audio
   remove_old_container();
@@ -1127,21 +1125,28 @@ function mute_unmute(audio, mute_btn) {
 
 
 
+function song_fullscreen_play_artist(container) {
+  let song_playing_container = document.querySelector(container);
+  const btns = song_playing_container.querySelectorAll(".popular_artist_card .playimg");
+  console.log(btns);
+  
+  btns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      console.log(index);
 
-
+    })
+  })
+}
+song_fullscreen_play_artist(".popular_artist_container");
 
 function song_fullscreen_play(container) {
   let song_playing_container = document.querySelector(container)
-
-
-
   const btns = song_playing_container.querySelectorAll(".song_card .playimg img");
+
+  
   btns.forEach((btn, index) => {
-
-
     btn.addEventListener("click", () => {
-      console.log("working");
-      console.log(index);
+    
       if (container === ".english_song_container") {
 
 
@@ -1173,6 +1178,5 @@ scroll_horizontally(".hindi_songs", ".hindi_song_container");
 song_fullscreen_play(".english_song_container");
 song_fullscreen_play(".hindi_song_container");
 song_fullscreen_play(".trending_container");
-console.log("songs listened are : ");
-console.log(songs_listened);
+
 
