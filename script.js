@@ -311,7 +311,7 @@ const songs2 = [
   },
   {
     title: "Millionaire Song",
-    artist: "Yo Yo Honey Singh", 
+    artist: "Yo Yo Honey Singh",
     filePath: "songs/millionaire_song.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/millionaire_song.jpeg" alt="millionaire_song_img">'
@@ -458,7 +458,7 @@ const songs2 = [
   },
   {
     title: "Hanuman Chalisa",
-    artist: "Brijesh Shandilya , Kuldeep Shukla ", 
+    artist: "Brijesh Shandilya , Kuldeep Shukla ",
     filePath: "songs/hanuman_chalisa.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/hanuman_chalisa.jpeg" alt="hanuman_chalisa_img">'
@@ -754,7 +754,43 @@ function creating_hindi_song_cards() {
 
 creating_hindi_song_cards();
 
+function search_songs_artists() {
+  let input = document.getElementById("search_input");
+  let search_result = document.getElementById("search_result");
+  input.addEventListener("input", () => {
+    let input_statement = input.value.toLowerCase().trim();
+    search_result.innerHTML = "";
+    if (input_statement = "") {
+      search_result.style.display = "none";
+      return;
+    }
+    let search_song_list = songs2.filter(song => {
+      song.title.toLowerCase().includes(input_statement) ||
+        song.artist.toLowerCase().includes(input_statement)
+    })
 
+    if (search_song_list.length === 0) {
+      search_result.innerHTML = "<p> No Songs Found </p>";
+    }
+    else {
+      search_song_list.forEach((song) => {
+        let div = document.createElement("div")
+        div.classList.add("song_card");
+        div.innerHTML = `
+              <div class="playimg"><img src="svgs/play.svg" alt=""></div>
+              ${song.imgTag}
+              <p>${song.title}</p>
+              <p>${song.artist}</p>`;
+        div.addEventListener("click", () => {
+          let index = songs2.indexOf(song);
+          playsong(index, song.language);
+        });
+      })
+    }
+    search_result.appendChild(div);
+  })
+  search_result.style.display = "flex";
+}
 
 
 function scroll_horizontally(to_be_scrolled, container) {
@@ -1155,13 +1191,13 @@ function song_fullscreen_play_artist(container) {
   btns.forEach((btn, index) => {
     btn.addEventListener("click", async () => {
       console.log(index);
-      await getting_songs_of_singer(index); 
-      if(singer_songs.length === 0 ){
+      await getting_songs_of_singer(index);
+      if (singer_songs.length === 0) {
         alert("No songs found for this singer !! Will be added soon ...");
         return;
       }
       playsong(0, "Singer_Songs");
-      
+
 
       window.scrollTo({
         top: window.innerHeight - 80,
