@@ -755,42 +755,79 @@ function creating_hindi_song_cards() {
 creating_hindi_song_cards();
 
 function search_songs_artists() {
-  let input = document.getElementById("search_input");
-  let search_result = document.getElementById("search_result");
-  input.addEventListener("input", () => {
-    let input_statement = input.value.toLowerCase().trim();
-    search_result.innerHTML = "";
-    if (input_statement = "") {
-      search_result.style.display = "none";
+  let search_input = document.getElementById("search_input");
+  let search_results = document.getElementById("search_results");
+  let search_heading = document.getElementById("search_heading");
+  let container = document.querySelector(".searched_songs");
+
+  search_input.addEventListener("input", () => {
+    let input_statement = search_input.value.toLowerCase().trim();
+    container.innerHTML = "";
+
+    // If input is empty, hide everything
+    if (input_statement === "") {
+      search_results.classList.add("hidden");
+      search_heading.classList.add("hidden");
       return;
     }
-    let search_song_list = songs2.filter(song => {
-      song.title.toLowerCase().includes(input_statement) ||
-        song.artist.toLowerCase().includes(input_statement)
-    })
 
+    // Filter songs
+    let search_song_list = songs2.filter(song => {
+      return (
+        song.title.toLowerCase().includes(input_statement) ||
+        song.artist.toLowerCase().includes(input_statement)
+      );
+    });
+
+    // If no songs found
     if (search_song_list.length === 0) {
-      search_result.innerHTML = "<p> No Songs Found </p>";
-    }
-    else {
-      search_song_list.forEach((song) => {
-        let div = document.createElement("div")
-        div.classList.add("song_card");
+      container.innerHTML = `<p class="font_manrope bold flex hcentre vcentre no_result_message">
+                                <img src="svgs/search.svg" alt="search" style="width: 24px; margin-right: 8px;">
+                                No Songs Found
+                            </p>`;
+    } else {
+      search_song_list.forEach(song => {
+        let div = document.createElement("div");
+        div.classList.add("song_card", "font_manrope");
         div.innerHTML = `
-              <div class="playimg"><img src="svgs/play.svg" alt=""></div>
-              ${song.imgTag}
-              <p>${song.title}</p>
-              <p>${song.artist}</p>`;
-        div.addEventListener("click", () => {
-          let index = songs2.indexOf(song);
-          playsong(index, song.language);
+          <div class="playimg">
+              <img src="svgs/play.svg" alt="">
+          </div>
+          ${song.imgTag}
+          <p class="font_16 bold song_title">${song.title}</p>
+          <p class="font_12 song_artist">${song.artist}</p>`;
+
+        // Attach play button click
+        div.querySelector(".playimg").addEventListener("click", () => {
+          // Find the song in songs2 by matching title + artist
+          let index = songs2.findIndex(s =>
+            s.title === song.title && s.artist === song.artist
+          );
+
+          if (index !== -1) {
+            console.log("fine 2, index:", index);
+            playsong(index, "Trending_songs"); // Use the correct type here
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: 'smooth'
+            });
+            console.log("fine 3");
+          } else {
+            console.warn("Song not found in songs2");
+          }
         });
-      })
+
+        container.appendChild(div);
+      });
     }
-    search_result.appendChild(div);
-  })
-  search_result.style.display = "flex";
+
+    // Show results
+    search_results.classList.remove("hidden");
+    search_heading.classList.remove("hidden");
+  });
 }
+
+search_songs_artists();
 
 
 function scroll_horizontally(to_be_scrolled, container) {
@@ -1240,7 +1277,9 @@ function song_fullscreen_play(container) {
 
 creating_song_cards();
 
+scroll_horizontally(".searched_songs", ".searched_container");
 scroll_horizontally(".trending_songs", ".trending_container");
+
 scroll_horizontally(".popular_artists", ".popular_artist_container");
 scroll_horizontally(".english_songs", ".english_song_container");
 scroll_horizontally(".hindi_songs", ".hindi_song_container");

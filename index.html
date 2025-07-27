@@ -102,13 +102,18 @@
         </div>
 
         <div class="right ">
-            <!-- <h2 class="font_manrope bold" id="search_heading" style="display: none;">Searched Songs</h2>
-            <div id="search_result" class="trending_songs flex hstart colgap_5"
-                style="display: none; overflow-x: scroll;"></div> -->
 
-            <!-- what i am thinking about search bar is that we should if someones searches or types something in the 
-             search bar then the array of search_songs_list must be created and then add functions like songs listened 
-             and play when clicked on play btn of song -->
+            <h2 class="font_manrope bold hidden" id="search_heading">Searched Songs / Artist</h2>
+            <div class="searched_container hidden" id="search_results">
+                <img class="backward_svg" src="svgs/backward.svg" alt="back">
+                <div class="searched_songs flex hstart vcentre colgap_5"> 
+                </div>
+                <img class="forward_svg" src="svgs/forward.svg" alt="forward">
+            </div>
+            
+
+
+            
             <h2 class="font_manrope bold">All Songs </h2>
             <div class="trending_container">
                 <img class="backward_svg" src="svgs/backward.svg" alt="back">

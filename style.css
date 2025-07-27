@@ -314,6 +314,19 @@
 
 
     /* Trending & Popular Sections */
+
+    .hidden {
+        display: none;
+    }
+
+    .no_result_message {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        color: white;
+    }
+
+    .searched_container,
     .trending_container,
     .popular_artist_container,
     .english_song_container,
@@ -322,6 +335,7 @@
         margin-bottom: 5px;
     }
 
+    .searched_songs,
     .trending_songs,
     .popular_artists,
     .english_songs,
@@ -333,6 +347,8 @@
         scroll-behavior: smooth;
     }
 
+    .searched_container::before,
+    .searched_container::after,
     .trending_container::before,
     .trending_container::after,
     .popular_artist_container::before,
@@ -350,6 +366,7 @@
         z-index: 2;
     }
 
+    .searched_container::before,
     .trending_container::before,
     .popular_artist_container::before,
     .english_song_container::before,
@@ -358,6 +375,7 @@
         background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
     }
 
+    .searched_container::after,
     .trending_container::after,
     .popular_artist_container::after,
     .english_song_container::after,
