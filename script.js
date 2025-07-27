@@ -1216,6 +1216,19 @@ function mute_unmute(audio, mute_btn) {
 
 }
 
+function setupLibraryToggle(toggleBtnId, panelClass) {
+  const toggleBtn = document.getElementById(toggleBtnId);
+  const panel = document.querySelector(`.${panelClass}`);
+
+  if (!toggleBtn || !panel) return;
+
+  toggleBtn.addEventListener("click", () => {
+    panel.classList.toggle("active");
+  });
+}
+
+setupLibraryToggle("toggleLibrary", "left_slide_panel");
+
 
 
 
