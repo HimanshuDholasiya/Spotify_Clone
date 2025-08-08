@@ -9,11 +9,26 @@ let newVolume = 0.7;
 
 const songs2 = [
   {
-    title: "Agar Tum Saath Ho",
-    artist: "Alka Yagnik, Arijit Singh",
-    filePath: "songs/agar_tum_saath_ho.mp3",
+    title: "Ve Kamleya",
+    artist: "Arijit Singh, Shreya Ghoshal , Pritam",
+    filePath: "songs/ve_kamleya.mp3",
     language: "Hindi",
-    imgTag: '<img class="song_card_image" src="song_img/agar_tum_saath_ho.jpeg" alt="agar_tum_saath_ho_img">'
+    imgTag: '<img class="song_card_image" src="song_img/ve_kamleya.jpeg" alt="ve_kamleya_img">'
+  },
+   {
+    title: "Raataan Lambiyan (Shershaah)",
+    artist: "Jubin Nautiyal, Asees Kaur , Tanishk Bagchi",
+    filePath: "songs/raataan_lambiyan_shershaah.mp3",
+    language: "Hindi",
+    imgTag: '<img class="song_card_image" src="song_img/raataan_lambiyan_shershaah.jpeg" alt="raataan_lambiyan_shershaah_img">'
+  },
+ 
+  {
+    title: "Millionaire Song",
+    artist: "Yo Yo Honey Singh",
+    filePath: "songs/millionaire_song.mp3",
+    language: "Hindi",
+    imgTag: '<img class="song_card_image" src="song_img/millionaire_song.jpeg" alt="millionaire_song_img">'
   },
   {
     title: "Apna Bana Le",
@@ -21,6 +36,13 @@ const songs2 = [
     filePath: "songs/apna_bana_le.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/apna_bana_le.jpeg" alt="apna_bana_le_img">'
+  },
+  {
+    title: "Hukum (Jailer)",
+    artist: "Anirudh Ravichander, Super Subu",
+    filePath: "songs/hukum_jailer.mp3",
+    language: "Hindi",
+    imgTag: '<img class="song_card_image" src="song_img/hukum_jailer.jpeg" alt="hukum_jailer_img">'
   },
   {
     title: "On & On",
@@ -56,6 +78,13 @@ const songs2 = [
     filePath: "songs/o_maahi.mp3",
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/o_maahi.jpeg" alt="o_maahi_img">'
+  },
+   {
+    title: "Agar Tum Saath Ho",
+    artist: "Alka Yagnik, Arijit Singh",
+    filePath: "songs/agar_tum_saath_ho.mp3",
+    language: "Hindi",
+    imgTag: '<img class="song_card_image" src="song_img/agar_tum_saath_ho.jpeg" alt="agar_tum_saath_ho_img">'
   },
   {
     title: "Royalty",
@@ -162,13 +191,7 @@ const songs2 = [
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/zinda_bhaag_milkha_bhaag.jpeg" alt="zinda_bhaag_milkha_bhaag_img">'
   },
-  {
-    title: "Hukum (Jailer)",
-    artist: "Anirudh Ravichander, Super Subu",
-    filePath: "songs/hukum_jailer.mp3",
-    language: "Hindi",
-    imgTag: '<img class="song_card_image" src="song_img/hukum_jailer.jpeg" alt="hukum_jailer_img">'
-  },
+  
   {
     title: "Chaleya Jawan",
     artist: "Anirudh Ravichander , Arijit Singh , Shilpa Rao , Kumaar",
@@ -288,13 +311,7 @@ const songs2 = [
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/jeene_laga_hoon.jpeg" alt="jeene_laga_hoon_img">'
   },
-  {
-    title: "Ve Kamleya",
-    artist: "Arijit Singh, Shreya Ghoshal , Pritam",
-    filePath: "songs/ve_kamleya.mp3",
-    language: "Hindi",
-    imgTag: '<img class="song_card_image" src="song_img/ve_kamleya.jpeg" alt="ve_kamleya_img">'
-  },
+  
   {
     title: "Samjhawan",
     artist: "Arijit Singh, Shreya Ghoshal , Jawad Ahmad ",
@@ -309,13 +326,7 @@ const songs2 = [
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tum_kya_mile.jpeg" alt="tum_kya_mile_img">'
   },
-  {
-    title: "Millionaire Song",
-    artist: "Yo Yo Honey Singh",
-    filePath: "songs/millionaire_song.mp3",
-    language: "Hindi",
-    imgTag: '<img class="song_card_image" src="song_img/millionaire_song.jpeg" alt="millionaire_song_img">'
-  },
+  
   {
     title: "Dheere Dheere Se Mere Zindagi",
     artist: "Yo Yo Honey Singh",
@@ -421,13 +432,7 @@ const songs2 = [
     language: "Hindi",
     imgTag: '<img class="song_card_image" src="song_img/tum_hi_aana_marjaavaan.jpeg" alt="tum_hi_aana_marjaavaan_img">'
   },
-  {
-    title: "Raataan Lambiyan (Shershaah)",
-    artist: "Jubin Nautiyal, Asees Kaur , Tanishk Bagchi",
-    filePath: "songs/raataan_lambiyan_shershaah.mp3",
-    language: "Hindi",
-    imgTag: '<img class="song_card_image" src="song_img/raataan_lambiyan_shershaah.jpeg" alt="raataan_lambiyan_shershaah_img">'
-  },
+ 
   {
     title: "Hamari Adhuri Kahani",
     artist: "Arijit Singh , Jeet Gannguli , Rashmi Virag",
