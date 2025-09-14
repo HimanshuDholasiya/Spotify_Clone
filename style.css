@@ -93,7 +93,7 @@
         /* Adjust if nav height is different */
         left: 0;
         width: 270px;
-        height: calc(100vh - 80px);
+        height: calc(100dvh - 80px);
         background-color: #121212;
         transform: translateX(-100%);
         /* hides off screen */
@@ -165,7 +165,7 @@
     /* Left-Right Layout */
     .left_right {
         flex-direction: row;
-        height: calc(100vh - 85px);
+        height: calc(100dvh - 85px);
         width: 100%;
         padding: 8px 8px;
     }
@@ -173,7 +173,7 @@
     .left,
     .left_slide_panel,
     .right {
-        height: calc(100vh - 90px);
+        height: calc(100dvh - 90px);
         background-color: rgb(18, 18, 18);
         border-radius: 15px;
         box-sizing: border-box;
@@ -508,7 +508,7 @@
         position: relative;
         flex-direction: column;
         z-index: 1;
-        height: calc(100vh - 80px);
+        height: calc(100dvh - 80px);
         width: 100%;
         row-gap: 5px;
         padding: 5px;
@@ -538,7 +538,7 @@
 
     .song_big_img {
         background-color: rgb(18, 18, 18);
-        height: calc(100vh - 80px - 20vh);
+        height: calc(100dvh - 80px - 20vh);
         width: 100%;
         border-radius: 15px;
         overflow: hidden;
@@ -606,6 +606,11 @@
         height: 100px;
         width: 100%;
         background-color: rgb(69, 69, 69);
+        transition: box-shadow 0.7s ease-in-out;
+    }
+
+    .song_controls:hover {
+        box-shadow: 0 0 5px 2px rgb(102, 255, 255);
     }
 
     .play_buttons {
@@ -753,13 +758,27 @@
 
     }
 
+    @media screen and (max-width: 1150px) {
+        .mute_volume {
+            display: none !important;
+        }
+
+        .song_img_name {
+            display: none !important;
+        }
+
+        .song_controls_container {
+            width: 90vw;
+        }
+    }
+
     @media screen and (max-width: 1000px) {
         .left_slide_panel {
             position: fixed;
             top: 80px;
             left: 0;
             width: 270px;
-            height: calc(100vh - 80px);
+            height: calc(100dvh - 80px);
             background-color: #121212;
             transform: translateX(-100%);
             transition: transform 0.3s ease-in-out;
@@ -843,6 +862,11 @@
         .search_bar {
             width: 316px;
         }
+
+        .song_big_img img {
+            max-width: 75%;
+            max-height: 56.25%;
+        }
     }
 
     @media screen and (max-width:480px) {
@@ -861,6 +885,75 @@
             width: 175px;
             font-size: 10px;
         }
+
+
+
+        .song_card,
+        .popular_artist_card {
+            height: 208.8px;
+            width: 144px;
+        }
+
+        .song_card img {
+            height: 123.84px;
+            width: 131.04px;
+        }
+
+        .popular_artist_card img {
+            width: 123.84px;
+            height: 123.84px;
+        }
+
+        .playimg img {
+            height: 32.4px;
+            width: 32.4px;
+        }
+
+        .searched_songs,
+        .trending_songs,
+        .popular_artists,
+        .english_songs,
+        .hindi_songs {
+            height: 237.6px;
+        }
+
+        .searched_container::before,
+        .searched_container::after,
+        .trending_container::before,
+        .trending_container::after,
+        .popular_artist_container::before,
+        .popular_artist_container::after,
+        .english_song_container::before,
+        .english_song_container::after,
+        .hindi_song_container::before,
+        .hindi_song_container::after {
+            width: 43.2px;
+        }
+
+        .backward_svg,
+        .forward_svg {
+            height: 21.6px;
+            width: 21.6px;
+            top: 68.4px;
+        }
+
+        .song_title {
+            font-size: 14px !important;
+        }
+
+        .song_artist {
+            font-size: 10px !important;
+        }
+
+        .artist_name {
+            font-size: 14px !important;
+        }
+
+        .artist_tag {
+            font-size: 10px !important;
+        }
+
+
     }
 
     @media screen and (max-width:380px) {

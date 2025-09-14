@@ -670,7 +670,7 @@ function create_artist_image() {
                             <img src="svgs/play.svg" alt="">
                         </div>
                         <img src="${singer.singer_img}" alt="">
-                        <p class="font_16 bold artisit_name">${singer.singer_name}</p>
+                        <p class="font_16 bold artist_name">${singer.singer_name}</p>
                         <p class="font_12 artist_tag">Artist</p>`
       container.appendChild(div);
     }

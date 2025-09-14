@@ -15,7 +15,8 @@
     .hcentre {
         justify-content: center;
     }
-    .hend{
+
+    .hend {
         justify-content: flex-end;
     }
 
@@ -100,4 +101,36 @@
             right: 25px;
             opacity: 1;
         }
+    }
+
+    /* For small screens (≤ 480px) */
+    @media (max-width: 480px) {
+        @keyframes up_play_animation {
+            from {
+                bottom: 0px;
+                right: 10px;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 70px;
+                right: 10px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes up_play_animation_artist {
+            from {
+                bottom: 0px;
+                right: 17.5px;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 68.6px;
+                right: 17.5px;
+                opacity: 1;
+            }
+        }
+
     }
