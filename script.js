@@ -583,27 +583,6 @@ const singer_data = [
 
 
 
-async function getSongNames() {
-  let a = await fetch("http://192.168.29.103:3000/songs/");
-  let response = await a.text();
-  let div = document.createElement("div");
-  div.innerHTML = response;
-  let as = div.getElementsByTagName("a");
-  for (let i = 0; i < as.length; i++) {
-    const element = as[i];
-    if (element.href.endsWith(".mp3")) {
-      songlinks.push(element.href)
-    }
-  }
-  for (let i = 0; i < songlinks.length; i++) {
-    let songurl = songlinks[i];
-    let filename = songurl.split("/").pop();
-    let songname = filename.replace(".mp3", "");
-    songs.push(songname);
-  }
-  return response;
-}
-
 
 
 
