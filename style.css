@@ -618,17 +618,32 @@
         inherits: false;
     }
 
+
+    /* Color combination for later
+     Neon Green: #39FF14
+
+Neon Blue: #00FFFF (cyan-blue)
+
+Neon Red: #FF073A
+
+Neon Purple: #DA00FF
+
+Neon Pink: #FF49FF
+
+Neon Yellow: #FFFF33
+
+Neon Orange: #FF6F00 */
     .song_controls::before {
 
         content: "";
         position: absolute;
-        background-image: conic-gradient(from var(--angle),red,blue,red);
-        padding: 3px;
+        background-image: conic-gradient(from var(--angle),#FF073A,#00FFFF,#39FF14 , #FF073A);
+        padding: 4px;
         height: 100px;
         border-radius: inherit;
         width: 100%;
         z-index: -1;
-        animation: 3s spin linear infinite;
+        animation: 2s spin linear infinite;
 
     }
 
