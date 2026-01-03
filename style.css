@@ -880,6 +880,8 @@ Neon Orange: #FF6F00 */
             display: flex;
         }
 
+
+
         .left_slide_panel {
             display: block;
             position: static;
@@ -889,7 +891,9 @@ Neon Orange: #FF6F00 */
             background: none;
             z-index: 1;
         }
+/* testing commit */
 
+        
         .left {
             display: flex;
             width: 100%;
